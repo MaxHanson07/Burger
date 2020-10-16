@@ -11,10 +11,10 @@ $(function() {
     // Send the PUT request.
     $.ajax("/api/burgers/" + id, {
       type: "PUT",
-      data: newSleepState
+      data: newdevourState
     }).then(
       function() {
-        console.log("changed sleep to", newSleep);
+        console.log("changed devour to", newdevour);
         // Reload the page to get the updated list
         location.reload();
       }
@@ -27,7 +27,7 @@ $(function() {
 
     var newBurger = {
       name: $("#ca").val().trim(),
-      sleepy: $("[name=sleepy]:checked").val().trim()
+      devour: $("[name=devour]:checked").val().trim()
     };
 
     // Send the POST request.
