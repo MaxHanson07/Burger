@@ -6,11 +6,10 @@
     {{#each burgers}}
     {{#unless devoured}}
     <li>{{this.burger_name}}</li>
+    <button class=".change-devour" type="submit">Devour</button>
     {{/unless}}
     {{/each}}
 </ul>
-
-<button type="submit">Devour</button>
 
 <h2>Burgers that are devoured!</h2>
 
