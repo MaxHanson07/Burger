@@ -6,9 +6,9 @@
 <ul>
     {{#each burgers}}
     {{#unless devoured}}
-    <div class=".change-devour">
+    <div>
         <li>{{this.burger_name}}</li>
-        <button type="submit">Devour</button>
+        <button class=".change-devour" type="submit">Devour</button>
     </div>
     {{/unless}}
     {{/each}}
