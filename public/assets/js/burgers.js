@@ -4,6 +4,8 @@ $(function() {
     var id = $(this).data("id");
     var newdevour = $(this).data("newdevour");
 
+    console.log("clicked")
+
     var newdevourState = {
       devoured: newdevour
     };
