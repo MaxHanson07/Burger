@@ -1,6 +1,6 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
-  $(".change-devour").on("click", function(event) {
+  $("#change-devour").on("click", function(event) {
     var id = $(this).data("id");
     var newdevour = $(this).data("newdevour");
 
@@ -23,7 +23,7 @@ $(function() {
     );
   });
 
-  $("#create-form").on("submit", function(event) {
+  $(".create-form").on("submit", function(event) {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
 
